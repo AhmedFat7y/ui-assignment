@@ -1,0 +1,135 @@
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0 auto;
+  width: 125rem;
+}
+.icons {
+  display: none;
+}
+.icon {
+  height:1.4rem;
+  width:1.4rem;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+.vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+section + section {
+  border-top: solid 1px black;
+}
+section .title {
+  color: #303030;
+  font-size: 7.2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+section .subtitle {
+  color: #606060;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 2.4em;
+  font-weight: 300;
+  margin-bottom: 6.5rem;
+}
+section a {
+  font-size: 1.6rem;
+}
+
+/********************************************************************************/
+
+header {
+  font-size: 1.6rem;
+  padding: 3rem 0;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+header nav, header .logo, nav ul, nav ul li, header .header-actions, header .header-search{
+  display: inline-block;
+  margin: 0;
+}
+header .logo {
+  line-height: 0;
+  vertical-align: top;
+  margin-top: 0.8rem;
+}
+
+nav ul li a, .header-right .header-actions a {
+  display: inline-block;
+  padding: 2rem 2rem;
+  text-decoration: none;
+  color: #303030;
+  font-weight: 300;
+  background: white;
+}
+nav ul li a:hover {
+  background: #303030;
+  color:;
+}
+
+header .header-right {
+  float: right;
+}
+header .header-actions a + a {
+  margin-left: 3rem;
+}
+header .header-search {
+  margin-left: 3rem;
+  text-align: center;
+  padding: 1.5rem;
+  border: solid 1px #303030;
+}
+.main-content {
+  font-size: 1.6rem;
+}
+
+/********************************************************************************/
+
+section.new-arrivals {
+  height: 50rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.new-arrivals .check-new-arrivals {
+  padding: 2.5rem 3.5rem;
+  color: #606060;
+  background: transparent;
+  border: solid 1px #303030;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.new-arrivals .check-new-arrivals:hover, .new-arrivals .check-new-arrivals:active {
+  color: white;
+  background: #606060;
+  border: solid 1px white;
+}
+
+/********************************************************************************/
+
+section.sign-up {
+  height: 45rem;
+  font-size: 0.5rem;
+  text-align: center;
+}
+.sign-up .subtitle {
+  font-size: 1.8rem;
+}
+
+/********************************************************************************/
+
+footer {
+  font-size: 1.6rem;
+}
