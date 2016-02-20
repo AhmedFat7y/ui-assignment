@@ -122,6 +122,46 @@ section.new-arrivals {
   border: solid 1px white;
 }
 
+section.gallery {
+  background: yellow;
+}
+
+.gallery .img-wrapper {
+  width: 25%;
+  height: 29.5rem;
+  display: inline-block;
+  float: left;
+}
+.gallery .img-wrapper-2x {
+  height: 59rem;
+}
+.gallery .img-wrapper-2x:last-child {
+  position: relative;
+  margin-top: -29.5rem; /* I needed it to pull the content below it too*/
+  float: right;
+
+}
+.gallery .img-wrapper-wrapper {
+  clear:both;
+  width: 75%;
+  display: inline-block;
+}
+
+.gallery .img-wrapper-wrapper .img-wrapper{
+  width: 33.33333%;
+}
+.gallery .img-wrapper.no-float {
+  /*clear:both;*/
+}
+.gallery .img-wrapper:nth-child(1) {background: orange;}
+.gallery .img-wrapper:nth-child(2) {background: red;}
+.gallery .img-wrapper:nth-child(3) {background: black;}
+.gallery .img-wrapper:nth-child(4) {background: green;}
+.gallery .img-wrapper:nth-child(5) {background: lime;}
+.gallery .img-wrapper:nth-child(6) {background: gray;}
+.gallery .img-wrapper:nth-child(7) {background: purple;}
+.gallery .img-wrapper:nth-child(8) {background: #86e;}
+
 /********************************************************************************/
 
 section.sign-up {
