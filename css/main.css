@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 html {
   font-size: 10px;
 }
@@ -27,9 +32,9 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-section + section {
+/*section + section {
   border-top: solid 1px black;
-}
+}*/
 section .title {
   color: #303030;
   font-size: 7.2em;
@@ -57,7 +62,7 @@ header {
   border-bottom: solid 1px #e5e5e5;
 }
 
-header nav, header .logo, nav ul, nav ul li, header .header-actions, header .header-search{
+header nav, header .logo, nav ul, nav li, header .header-actions, header .header-search{
   display: inline-block;
   margin: 0;
 }
@@ -67,7 +72,7 @@ header .logo {
   margin-top: 0.8rem;
 }
 
-nav ul li a, .header-right .header-actions a {
+nav li a, .header-right .header-actions a {
   display: inline-block;
   padding: 2rem 2rem;
   text-decoration: none;
@@ -75,9 +80,9 @@ nav ul li a, .header-right .header-actions a {
   font-weight: 300;
   background: white;
 }
-nav ul li a:hover {
+nav li a:hover {
   background: #303030;
-  color:;
+  color:white;
 }
 
 header .header-right {
@@ -131,5 +136,39 @@ section.sign-up {
 /********************************************************************************/
 
 footer {
+  font-size: 1.6rem;
+  /*border-top: solid 1px black;*/
+}
+footer .column ul {
+  padding: 0;
+}
+footer .column a, footer .footer-social {
+  padding: 0.3rem;
+  font-size: 1.2rem;
+}
+footer .column li {
+  display: block;
+}
+footer .column li + li {
+  margin-top: 0.3rem;
+}
+footer .column a:hover {
+  text-decoration: underline;
+  background: transparent;
+  color: #303030;
+}
+footer .column {
+  vertical-align: top;
+  padding: 1.5rem;
+  display: inline-block;
+  width: 25%;
+  float:left;
+}
+footer .column + .column {
+  border-left: solid 1px #606060;
+}
+footer .title {
+  margin-top: 0;
+  margin-bottom: 1.6rem;
   font-size: 1.6rem;
 }
