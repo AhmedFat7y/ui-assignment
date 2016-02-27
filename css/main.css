@@ -173,6 +173,9 @@ section.sign-up {
   font-size: 1.8rem;
 }
 
+form.inline fieldset {
+  border: none;
+}
 form.inline legend {
   display: none;
 }
@@ -180,7 +183,7 @@ form.inline .controls-group {
   width: 50%;
   margin: 0 auto;
 }
-form.inline input {
+form.inline input, form.inline button {
   line-height: 6.1rem;
   font-size: 1.8rem;
   margin: 0;
@@ -191,7 +194,7 @@ form.inline input[type="email"] {
   padding-left: 10px;
   color: #303030;
 }
-form.inline input[type="submit"], form.inline button {
+form.inline button[type="submit"], form.inline button {
   width : 9.5rem;
   background: #f68236;
   color: white;
