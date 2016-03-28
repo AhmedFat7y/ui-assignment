@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "Lato";
 }
 html {
   font-size: 10px;
@@ -60,6 +61,7 @@ header {
   font-size: 1.6rem;
   padding: 3rem 0;
   border-bottom: solid 1px #e5e5e5;
+  margin-bottom: 3rem;
 }
 
 header nav, header .logo, nav ul, nav li, header .header-actions, header .header-search{
@@ -207,7 +209,7 @@ form.inline button[type="submit"], form.inline button {
 
 footer {
   font-size: 1.6rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   /*border-top: solid 1px black;*/
 }
 footer .column ul {
@@ -242,4 +244,104 @@ footer .title {
   margin-top: 0;
   margin-bottom: 1.6rem;
   font-size: 1.6rem;
+}
+/*.test-div {
+  height: 200px;
+  border: 2px solid black;
+  background-color: green;
+}
+
+.test-div .test-div {
+  border: none;
+}
+.test-div + .test-div {
+  border-left: 2px solid black;
+}*/
+
+.row {
+  width: 100%;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear:both;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  display: inline-block;
+  float: left;
+  padding: 0 20px;
+}
+.col-1 {
+  width: 8.33333333333%;
+}
+.col-2 {
+  width: 16.6666666667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.3333333333%;
+}
+.col-5 {
+  width: 41.6666666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.3333333333%;
+}
+.col-8 {
+  width: 66.6666666667%;
+}
+.col-9 {
+  width: 57%;
+}
+.col-10 {
+  width: 83.3333333333%;
+}
+.col-12 {
+  width: 91.6666666667%;
+}
+.col-12 {
+  width: 100%%;
+}
+.responsive {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.checkout-products-header {
+  color: #909090;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #909090;
+  margin-bottom: 20px;
+}
+
+.products-header {
+
+}
+.checkout-product {
+  color: #303030;
+  font-size: 14px;
+}
+
+.checkout-product .product-name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.checkout-product .product-info {
+  color: #606060;
+  font-size: 12px;
+  font-style: italic;
+}
+.checkout-product .product-size, .checkout-product .product-color {
+  text-transform: capitalize;
 }
