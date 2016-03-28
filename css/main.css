@@ -300,16 +300,52 @@ footer .title {
   width: 66.6666666667%;
 }
 .col-9 {
-  width: 57%;
+  width: 75%;
 }
 .col-10 {
   width: 83.3333333333%;
 }
-.col-12 {
+.col-11 {
   width: 91.6666666667%;
 }
 .col-12 {
   width: 100%%;
+}
+.col-offset-1 {
+  margin-left: 8.33333333333%;
+}
+.col-offset-2 {
+  margin-left: 16.6666666667%;
+}
+.col-offset-3 {
+  margin-left: 25%;
+}
+.col-offset-4 {
+  margin-left: 33.3333333333%;
+}
+.col-offset-5 {
+  margin-left: 41.6666666667%;
+}
+.col-offset-6 {
+  margin-left: 50%;
+}
+.col-offset-7 {
+  margin-left: 58.3333333333%;
+}
+.col-offset-8 {
+  margin-left: 66.6666666667%;
+}
+.col-offset-9 {
+  margin-left: 75%;
+}
+.col-offset-10 {
+  margin-left: 83.3333333333%;
+}
+.col-offset-11 {
+  margin-left: 91.6666666667%;
+}
+.col-offset-12 {
+  margin-left: 100%%;
 }
 .responsive {
   max-height: 100%;
@@ -317,17 +353,13 @@ footer .title {
 }
 
 .checkout-products-header {
-  color: #909090;
+  color: #cbcbcb;
   text-transform: uppercase;
   font-size: 12px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #909090;
-  margin-bottom: 20px;
+  /*border-bottom: 1px solid #cbcbcb;*/
 }
 
-.products-header {
-
-}
 .checkout-product {
   color: #303030;
   font-size: 14px;
@@ -344,4 +376,36 @@ footer .title {
 }
 .checkout-product .product-size, .checkout-product .product-color {
   text-transform: capitalize;
+}
+.checkout-product {
+    padding: 20px 0;
+}
+.checkout-product:nth-child(odd) {
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.checkout-product:nth-child(even), .checkout-summary {
+    background-color: #fdfdfd;
+    margin: 3px 0;
+    padding: 17px 0;
+}
+
+.product-img-wrapper {
+    padding: 0;
+}
+.product-img-wrapper img {
+    vertical-align: top;
+}
+.checkout-product > div {
+    position: relative;
+    top: 50px; /*calculated based on height of box won't change*/
+    transform: translateY(-50%);
+}
+.product-description .product-name, .product-description .product-info {
+    margin: 0;
+    margin-top: 7px;
+}
+.checkout-summary .subtotal{
+  color:#f68236;
 }
