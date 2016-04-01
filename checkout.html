@@ -40,32 +40,34 @@
       <div class="main-content">
         <!--  Insert your content here -->
         <section class="checkout checkout-products">
-          <h2 class="title">Your shopping bag</h2>
-          <p class="subtitle">Items reserved for little time only</p>
-          <header class="row checkout-products-header">
-            <div class="col-1 product-img test-div">
-              <span>Product</span>
-            </div>
-            <div class="col-5 product-description test-div">
-              <span>Description</span>
-            </div>
-            <div class="col-2 product-color-wrapper">
-              <span>Color</span>
-            </div>
-            <div class="col-1 product-size-wrapper">
-              <span>Size</span>
-            </div>
-            <div class="col-1 product-quantity-wrapper">
-              <span>Qty</span>
-            </div>
-            <div class="col-1 product-amount-wrapper">
-              <span>Price</span>
-            </div>
-            <div class="col-1 product-delete-wrapper">
-              <span>Delete</span>
-            </div>
+          <header>
+            <h2 class="title">Your shopping bag</h2>
+            <p class="subtitle">Items reserved for little time only</p>
           </header>
           <div class="row checkout-products-list">
+            <header class="row checkout-products-header">
+              <div class="col-1 product-img test-div">
+                <span>Product</span>
+              </div>
+              <div class="col-5 product-description test-div">
+                <span>Description</span>
+              </div>
+              <div class="col-2 product-color-wrapper">
+                <span>Color</span>
+              </div>
+              <div class="col-1 product-size-wrapper">
+                <span>Size</span>
+              </div>
+              <div class="col-1 product-quantity-wrapper">
+                <span>Qty</span>
+              </div>
+              <div class="col-1 product-amount-wrapper">
+                <span>Price</span>
+              </div>
+              <div class="col-1 product-delete-wrapper">
+                <span>Delete</span>
+              </div>
+            </header>
             <div class="row checkout-products-item">
               <div class="col-1 product-img-wrapper test-div">
                 <img async class="responsive" src="http://placehold.it/100x100">
@@ -191,14 +193,16 @@
               <div class="col-1 col-offset-9">
                 Subtotal:
               </div>
-              <div class="col-1 subtotal">
+              <div class="col-1 subtotal changed-value">
                 $540.67
               </div>
           </footer>
         </section><!--end checkout products-->
         <section class="checkout colored shipping-address-form">
-          <h2 class="title">Shipping Address</h2>
-          <p class="subtitle">All fields are required</p>
+          <header>
+            <h2 class="title">Shipping Address</h2>
+            <p class="subtitle">All fields are required</p>
+          </header>
           <form action="#!" class="shipping-address">
             <div class="control-group col-6 col-offset-3">
               <label for="delivery-method">Select Delivery Method</label>
@@ -249,6 +253,30 @@
             <div class="control-group col-2 col-offset-5">
               <input type="checkbox" name="same-address" id="same-address">
               <label for="address-2">Use this address for billing</label>
+            </div>
+          </form>
+        </section>
+        <section class="checkout colored payment-options">
+          <header>
+            <h2 class="title">Payment Options</h2>
+            <p class="subtitle">All fields are required</p>
+          </header>
+          <form action="#!" class="payment-options">
+            <div class="subtotal">
+              <p>Subtotal: <span class="currency">$567.95</span></p>
+              <p>Shipping: <span class="currency">$15.00</span></p>
+              <p class="changed-value">Total: <span class="currency">$582.95</span></p>
+            </div>
+            <div class="control-group col-6 col-offset-3">
+              <label for="payment-method">Select Payment Method</label>
+              <select name="payment-method" id="payment-method">
+                <option value="0">Select a method</option>
+                <option value="1">Master</option>
+                <option value="2">Visa</option>
+              </select>
+            </div>
+            <div class="control-group col-2 col-offset-5">
+              <button type="submit">Order Now</button>
             </div>
           </form>
         </section>

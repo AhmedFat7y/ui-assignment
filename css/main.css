@@ -353,12 +353,12 @@ footer .title {
 section {
 
 }
-.checkout-products-header {
+.checkout-products-list .checkout-products-header {
   color: #cbcbcb;
   text-transform: uppercase;
   font-size: 1.2rem;
   padding-bottom: 1rem;
-  /*border-bottom: 1px solid #cbcbcb;*/
+  margin: 0;
 }
 
 .checkout-products-item {
@@ -378,14 +378,14 @@ section {
 .checkout-products-item .product-size, .checkout-products-item .product-color {
   text-transform: capitalize;
 }
-
-.checkout-products-item:nth-child(odd) {
+/* flipping odd and even because of the header inside the products list */
+.checkout-products-item:nth-child(even) {
   padding: 2rem 0;
   border-top: 0.1rem solid #cbcbcb;
   border-bottom: 0.1rem solid #cbcbcb;
 }
 
-.checkout-products-item:nth-child(even), .checkout-summary {
+.checkout-products-item:nth-child(odd), .checkout-summary {
   background-color: #fdfdfd;
   margin: 0.3rem 0;
   padding: 1.7rem 0;
@@ -407,24 +407,24 @@ section {
   margin: 0;
   margin-top: 0.7rem;
 }
-.checkout-summary .subtotal{
+.checkout-summary .subtotal, .checkout .changed-value{
   color:#f68236;
-}
-.checkout-products header {
-  margin-bottom: 0;
-  border-bottom: none;
 }
 .checkout {
   text-align: center;
 }
 .checkout .title {
   font-size: 3.6rem;
-  margin-top: 5rem;
 }
 .checkout .subtitle {
   font-size:1.8rem;
-  margin-bottom: 5rem;
+  font-style: normal;
   text-transform: none;
+}
+.checkout header {
+  margin: 5rem 0;
+  border:none;
+  padding:0
 }
 section.checkout {
   margin-top: 2rem;
@@ -434,28 +434,61 @@ section.checkout {
 section.checkout.colored {
   background-color: #fdfdfd;
 }
-.shipping-address-form .control-group{
+form .control-group{
     text-align: left;
 }
-.shipping-address-form label {
+form .control-group label {
+  font-size: 1.2rem;
   text-transform: uppercase;
+  color: #949494;
 }
-form input {
+form .control-group input, form .control-group select {
+  margin-top: 0.8rem;
+}
+
+input, select {
   width:100%;
 }
+input[type="checkbox"], input[type="radio"] {
+  width: auto;
+}
+
 .inline-controls-2 .inline-control {
   width: 50%;
   float: left;
 }
 
 form .inline-control:first-child {
-  padding: 0 2rem 0 0;
+  padding: 0 1rem 0 0;
 }
 
 form .inline-control + .inline-control {
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1rem;
 }
 
-form .control-group {
+form .control-group + .control-group{
+  margin-top: 3rem;
+}
+form input[type="checkbox"] {
+  margin-right: 0.7rem;
+}
+form input[type="checkbox"] + label {
+  text-transform: none;
+}
 
+.payment-options .subtotal {
+  font-size: 1.8rem;
+}
+.payment-options .currency {
+  font-style: italic;
+}
+
+form button[type="submit"] {
+  background-color: #f68236;
+  color: white;
+  padding: 1.2rem 0;
+  width: 100%;
+  font-size: 1.6rem;
+  border: none;
+  font-weight: bold;
 }
